@@ -1,20 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Tony Kilgore | IT Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kilgoreit.dev | Tony's Hub</title>
     <style>
-        body { font-family: sans-serif; text-align: center; padding: 50px; background: #f4f4f4; }
-        .card { background: white; padding: 20px; border-radius: 10px; display: inline-block; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        h1 { color: #333; }
+        :root { --bg: #1a1a1a; --card: #2d2d2d; --text: #e0e0e0; --accent: #ff4d4d; }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 20px; text-align: center; }
+        .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 1000px; margin: 40px auto; }
+        .card { background: var(--card); padding: 20px; border-radius: 12px; border-top: 4px solid var(--accent); transition: transform 0.2s; }
+        .card:hover { transform: translateY(-5px); }
+        .card h2 { color: var(--accent); margin-top: 0; }
+        a { color: var(--accent); text-decoration: none; font-weight: bold; }
+        .jellyfin { background: #512da8; color: white; } /* Jellyfin purple */
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>Tony Kilgore</h1>
-        <p>BS in Information Technologies - SNHU</p>
-        <hr>
-        <p>Welcome to my domain. I specialize in Linux servers, retro modding, and home networking.</p>
-        <p>Currently working on: <b>Debian Home Server & PSP Modding</b></p>
+    <h1>KILGORE IT HUB</h1>
+    <p>IT Student @ SNHU | Home Lab Enthusiast | Mechanic</p>
+
+    <div class="container">
+        <div class="card jellyfin">
+            <h2>Movies & TV</h2>
+            <p>Access the private Jellyfin server.</p>
+            <a href="https://jellyfin.kilgoreit.dev" style="color: white;">Launch Server →</a>
+        </div>
+
+        <div class="card">
+            <h2>PC Building</h2>
+            <p>Custom AMD & Intel builds. MSI enthusiast.</p>
+            <a href="#">View My Builds →</a>
+        </div>
+
+        <div class="card">
+            <h2>Gaming</h2>
+            <p>PC, Console Modding, & Retro Emulation.</p>
+            <a href="#">Gamertags →</a>
+        </div>
+
+        <div class="card">
+            <h2>The Garage</h2>
+            <p>Car repairs and electrical upgrades.</p>
+            <a href="#">Project Logs →</a>
+        </div>
+        
+        <div class="card">
+            <h2>Music</h2>
+            <p>Asking Alexandria, BMTH, & Metalcore.</p>
+            <a href="#">Playlists →</a>
+        </div>
     </div>
 </body>
 </html>
