@@ -3,17 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kilgoreit.dev | Tony Kilgore</title>
+    <title>Tk | kilgoreit.dev</title>
     <style>
-        body { font-family: 'Helvetica Neue', Arial, sans-serif; background-color: #0f172a; color: #f8fafc; margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; text-align: center; }
-        .container { width: 90%; max-width: 450px; padding: 20px; }
-        .profile-img { width: 120px; height: 120px; border-radius: 50%; border: 3px solid #38bdf8; margin-bottom: 15px; }
-        h1 { font-size: 1.5rem; margin: 10px 0; }
-        p.bio { color: #94a3b8; font-size: 0.95rem; line-height: 1.4; margin-bottom: 25px; }
-        .link { display: block; background-color: #1e293b; color: #f8fafc; padding: 15px; margin: 10px 0; border-radius: 8px; text-decoration: none; font-weight: 500; transition: 0.3s; border: 1px solid #334155; }
-        .link:hover { background-color: #334155; border-color: #38bdf8; }
-        .section-title { font-size: 0.8rem; text-transform: uppercase; color: #38bdf8; letter-spacing: 1px; margin-top: 25px; margin-bottom: 5px; text-align: left; }
+        /* Modern Dark Theme */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #0a0a0c; 
+            color: #e0e0e0; 
+            margin: 0; 
+            display: flex; 
+            justify-content: center; 
+            padding-top: 50px;
+        }
+        .container { 
+            width: 90%; 
+            max-width: 400px; 
+            text-align: center; 
+        }
+        h1 { 
+            font-size: 2.5rem; 
+            color: #38bdf8; 
+            margin-bottom: 5px; 
+        }
+        .tagline { 
+            color: #94a3b8; 
+            margin-bottom: 30px; 
+            font-style: italic; 
+        }
+        /* Bio Link Buttons */
+        .link { 
+            display: block; 
+            background: #1e293b; 
+            color: #ffffff; 
+            padding: 16px; 
+            margin: 12px 0; 
+            border-radius: 12px; 
+            text-decoration: none; 
+            font-weight: 600; 
+            border: 1px solid #334155;
+            transition: all 0.2s ease-in-out;
+        }
+        .link:hover { 
+            background: #334155; 
+            border-color: #38bdf8; 
+            transform: scale(1.02);
+        }
+        .section-header {
+            text-align: left;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #38bdf8;
+            margin: 25px 0 8px 5px;
+        }
     </style>
 </head>
 <body>
-    <div class="container
+    <div class="container">
+        <h1>Tk</h1>
+        <p class="tagline">IT Student | Home Lab | Gearhead</p>
+
+        <div class="section-header">The Tech</div>
+        <a href="https://jellyfin.kilgoreit.dev" class="link">🎥 Jellyfin Server</a>
+        <a href="#" class="link">💻 PC Building & Modding</a>
+        <a href="#" class="link">🎮 Gaming Setup</a>
+
+        <div class="section-header">The Life</div>
+        <a href="#" class="link">🚗 Garage & Car Projects</a>
+        <a href="#" class="link">🌱 Gardening & Cooking</a>
+        <a href="#" class="link">🎵 Metalcore & Playlists</a>
+    </div>
+</body>
+</html>
