@@ -5,73 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tk | kilgoreit.dev</title>
     <style>
-        /* Modern Dark Theme */
         body { 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            background-color: #0a0a0c; 
-            color: #e0e0e0; 
+            background-color: #0f172a; 
+            color: #f8fafc; 
             margin: 0; 
+            padding: 40px 20px;
             display: flex; 
-            justify-content: center; 
-            padding-top: 50px;
+            justify-content: center;
         }
-        .container { 
-            width: 90%; 
-            max-width: 400px; 
-            text-align: center; 
+        .bio-container { 
+            max-width: 600px; 
+            line-height: 1.6;
         }
-        h1 { 
-            font-size: 2.5rem; 
-            color: #38bdf8; 
-            margin-bottom: 5px; 
-        }
-        .tagline { 
-            color: #94a3b8; 
-            margin-bottom: 30px; 
-            font-style: italic; 
-        }
-        /* Bio Link Buttons */
-        .link { 
-            display: block; 
-            background: #1e293b; 
-            color: #ffffff; 
-            padding: 16px; 
-            margin: 12px 0; 
-            border-radius: 12px; 
-            text-decoration: none; 
-            font-weight: 600; 
-            border: 1px solid #334155;
-            transition: all 0.2s ease-in-out;
-        }
-        .link:hover { 
-            background: #334155; 
-            border-color: #38bdf8; 
-            transform: scale(1.02);
-        }
-        .section-header {
-            text-align: left;
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #38bdf8;
-            margin: 25px 0 8px 5px;
-        }
+        h1 { color: #38bdf8; font-size: 3rem; margin-bottom: 10px; }
+        h2 { color: #38bdf8; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 2px; border-bottom: 1px solid #334155; padding-bottom: 5px; margin-top: 30px; }
+        p { margin-bottom: 20px; font-size: 1.1rem; color: #cbd5e1; }
+        .highlight { color: #38bdf8; font-weight: bold; }
+        .hobby-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+        .hobby-tag { background: #1e293b; padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; border: 1px solid #334155; }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="bio-container">
         <h1>Tk</h1>
-        <p class="tagline">IT Student | Home Lab | Gearhead</p>
+        <p>I'm an <span class="highlight">IT Student at SNHU</span> currently based in South Carolina. I'm a husband and a father of four who lives for the "hands-on" side of technology and life.</p>
 
-        <div class="section-header">The Tech</div>
-        <a href="https://jellyfin.kilgoreit.dev" class="link">🎥 Jellyfin Server</a>
-        <a href="#" class="link">💻 PC Building & Modding</a>
-        <a href="#" class="link">🎮 Gaming Setup</a>
+        <h2>The IT Side</h2>
+        <p>I focus on <span class="highlight">Hardware, Networking, and System Admin</span>. I'm not much for heavy coding—I prefer the real-world stuff like self-hosting my own <span class="highlight">Debian Jellyfin server</span> and running AdGuard Home. I'm a big fan of Linux (specifically CachyOS and Debian) and I love the challenge of modding hardware, from building PCs to custom PSP homebrew.</p>
 
-        <div class="section-header">The Life</div>
-        <a href="#" class="link">🚗 Garage & Car Projects</a>
-        <a href="#" class="link">🌱 Gardening & Cooking</a>
-        <a href="#" class="link">🎵 Metalcore & Playlists</a>
+        <h2>Hands-on Hobbies</h2>
+        <p>When I'm not behind a screen, I'm usually under a hood or in the dirt. I'm a hobbyist mechanic who enjoys everything from <span class="highlight">brake jobs to sub-woofer installations</span>. At home, you'll find me cooking for the family or out in the <span class="highlight">garden</span>—we're currently working on starting everything from seed.</p>
+
+        <h2>Gaming & Music</h2>
+        <p>I'm a PC and console gamer through and through. You'll catch me in <span class="highlight">Terraria, Phasmophobia, or Black Desert Online</span>. My workshop usually has a soundtrack of <span class="highlight">Metalcore</span>—think Asking Alexandria, Sleep Theory, and Bring Me the Horizon.</p>
+
+        <div class="hobby-list">
+            <span class="hobby-tag">Linux</span>
+            <span class="hobby-tag">Home Lab</span>
+            <span class="hobby-tag">Mechanic</span>
+            <span class="hobby-tag">Gardening</span>
+            <span class="hobby-tag">Gaming</span>
+            <span class="hobby-tag">Metalcore</span>
+        </div>
     </div>
 </body>
 </html>
