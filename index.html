@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KilgoreIT | TeamSpeak 6 Home</title>
+    <title>KilgoreIT | TeamSpeak 6 Hub</title>
     <style>
         :root {
             --bg-color: #0d1117;
@@ -11,6 +11,8 @@
             --accent-color: #58a6ff;
             --secondary-bg: #161b22;
             --border-color: #30363d;
+            --success-color: #238636;
+            --highlight: #f0883e;
         }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -21,7 +23,7 @@
             padding: 20px;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             background: var(--secondary-bg);
             padding: 40px;
@@ -36,108 +38,132 @@
         }
         .server-box {
             background: #000;
-            padding: 15px;
-            border-left: 4px solid var(--accent-color);
-            font-family: monospace;
-            font-size: 1.2rem;
-            margin: 20px 0;
+            padding: 20px;
+            border: 2px dashed var(--accent-color);
+            border-radius: 8px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.3rem;
+            margin: 25px 0;
             color: #fff;
             text-align: center;
         }
-        .badge {
+        .status-dot {
+            height: 10px;
+            width: 10px;
+            background-color: var(--success-color);
+            border-radius: 50%;
             display: inline-block;
-            background: var(--accent-color);
-            color: #000;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            font-weight: bold;
-            margin-bottom: 10px;
+            margin-right: 5px;
         }
         ul {
             list-style: none;
             padding-left: 0;
         }
         li {
-            margin-bottom: 10px;
-            padding-left: 20px;
+            margin-bottom: 12px;
+            padding-left: 25px;
             position: relative;
         }
         li::before {
-            content: "▹";
+            content: "➜";
             position: absolute;
             left: 0;
             color: var(--accent-color);
         }
-        .guide-section {
-            background: rgba(88, 166, 255, 0.05);
+        .step-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
             padding: 20px;
             border-radius: 8px;
-            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .step-number {
+            color: var(--highlight);
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-right: 10px;
         }
         footer {
             text-align: center;
             margin-top: 40px;
-            font-size: 0.8rem;
+            font-size: 0.85rem;
             color: #8b949e;
         }
         strong { color: #fff; }
+        code {
+            background: #000;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: var(--highlight);
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <div class="badge">SNHU IT STUDENT PROJECT</div>
-    <h1>🎙️ Welcome to the KilgoreIT TeamSpeak 6 Server</h1>
+    <h1>🎙️ KilgoreIT TeamSpeak 6 Server</h1>
+    <p>Privacy-focused, low-latency communication. No bloat, just performance.</p>
     
     <div class="server-box">
-        Server Address: void.ny3.teamspeak.com
+        <span class="status-dot"></span> Server Address: void.ny3.teamspeak.com
     </div>
 
-    <p>As an IT student, I value privacy, low latency, and actually <strong>owning</strong> my data. I’ve moved away from the bloat of Discord to host my own infrastructure. If you're looking for high-fidelity audio without the corporate tracking, you're in the right place.</p>
+    <h2>🚀 Why the Switch?</h2>
+    <p>I value performance and data ownership. I’ve moved away from Discord's corporate tracking and resource-heavy client to host a dedicated TeamSpeak environment. If you want crystal clear audio and a client that doesn't tank your FPS while gaming, this is it.</p>
 
-    <h3>🚀 TeamSpeak 6 vs. Discord</h3>
-    <ul>
-        <li><strong>Performance:</strong> TS6 is incredibly lightweight. While Discord eats RAM, TS6 stays lean so your PC can focus on the game.</li>
-        <li><strong>Audio Quality:</strong> Higher bitrates and better codecs. No "robot voice" or random lag spikes.</li>
-        <li><strong>Privacy:</strong> No one is selling your voice data or tracking your "Rich Presence" to serve you ads.</li>
-    </ul>
-
-    <h3>🎮 Gaming & Vibes</h3>
-    <p>My gaming style leans toward hardcore survival, high-stakes extraction, and deep progression. You'll catch me in:</p>
-    <ul>
-        <li><strong>Terraria</strong> (Heavily modded)</li>
-        <li><strong>Phasmophobia</strong> (Ghost hunting)</li>
-        <li><strong>Black Desert Online</strong> (The endless grind)</li>
-    </ul>
-    <p>My workshop usually has a soundtrack of <strong>Metalcore</strong>—Bring Me The Horizon, Sleep Theory, and Asking Alexandria are on constant rotation.</p>
-
-    <div class="guide-section">
-        <h3>📖 Beginner's Guide: How to Use TS6</h3>
-        <p>If you're coming from Discord, TeamSpeak works a little differently. Here’s the breakdown:</p>
-        
-        <h4>1. The "Always On" Connection</h4>
-        <p>In TeamSpeak, there is no "Join Voice" button. When you are in a channel, <strong>your voice is live.</strong> You don't have to click a separate room to start talking; just connect and you're in.</p>
-
-        <h4>2. Moving Channels (Double-Click)</h4>
-        <p>To move from the Lobby to a game room, simply <strong>double-click</strong> the name of the channel. You will instantly "teleport" there. You can see everyone in every room at a glance without having to join them first.</p>
-
-        <h4>3. The AFK System</h4>
-        <p>Don't disconnect when you step away! Use the <strong>"Away"</strong> icon (the little clock) in the top toolbar. This mutes your mic and speakers and tags you as <em>(Away)</em>. If you stay idle too long, the server will automatically move you to the AFK channel to keep things organized.</p>
-
-        <h4>4. The "Poke" Function</h4>
-        <p>Need someone's attention? Right-click their name and select <strong>"Poke Client."</strong> It sends a direct "Hey!" alert sound and a popup on their screen. It's the best way to wake someone up for a match.</p>
+    <h2>📥 Step 1: Installation</h2>
+    <div class="step-card">
+        <p><span class="step-number">01.</span> Go to <strong><a href="https://www.teamspeak.com/en/downloads/#teamspeak5" style="color:var(--accent-color);">TeamSpeak.com</a></strong> and download the <strong>TeamSpeak Client</strong> (ensure it is the new version, often referred to as TS5/TS6 Beta).</p>
+        <p><span class="step-number">02.</span> Run the installer and create a TeamSpeak account (or sign in). This saves your identities and permissions across devices.</p>
+        <p><span class="step-number">03.</span> Once open, click the <strong>"Connect"</strong> button (the globe icon or via the top menu).</p>
+        <p><span class="step-number">04.</span> Enter <code>void.ny3.teamspeak.com</code> in the server address and pick a nickname.</p>
     </div>
 
-    <h3>🛠️ Technical Specs</h3>
+    <h2>📖 Step 2: How to Use (The Basics)</h2>
+    <div class="step-card">
+        <h3>The "Always On" Rule</h3>
+        <p>In TeamSpeak, there is no "Join Voice" button. When you enter a channel, <strong>you are live.</strong> If you need silence, you must manually mute your mic or move to a different room.</p>
+
+        <h3>Moving Between Channels</h3>
+        <p>To move from the Lobby to a specific game room, <strong>double-click</strong> the channel name. You will "teleport" there instantly. You can see who is in every room at a glance without having to join first.</p>
+
+        <h3>The AFK / Away System</h3>
+        <p>Don't disconnect if you're just grabbing a snack. Click the <strong>Away (Clock) icon</strong> in the top toolbar. This mutes you and your speakers so you don't hear us, and we don't hear you. The server will eventually move you to the <em>AFK/Idle</em> channel automatically if you stop moving your mouse.</p>
+
+        <h3>Poking Users</h3>
+        <p>If someone is tabbed out, right-click their name and select <strong>"Poke Client."</strong> This sends a direct alert sound and a popup on their screen. It's the "Discord @mention" but way harder to ignore.</p>
+    </div>
+
+    <h2>🎮 What We're Playing</h2>
     <ul>
-        <li><strong>OS:</strong> Debian 12 (Bookworm)</li>
-        <li><strong>Network:</strong> AdGuard Home Protected</li>
-        <li><strong>Admin:</strong> Tony Kilgore (Tk)</li>
+        <li><strong>Terraria:</strong> Usually running heavy mods for a deep progression experience.</li>
+        <li><strong>Phasmophobia:</strong> High-fidelity audio makes the hunts actually scary.</li>
+        <li><strong>Black Desert Online:</strong> The endless grind for combat and gear.</li>
     </ul>
+    <p>Music of choice: <strong>Metalcore</strong> (Asking Alexandria, Sleep Theory, Bring Me The Horizon).</p>
+
+    <h2>🛠️ Technical Specs</h2>
+    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 250px;">
+            <h3>The Server</h3>
+            <ul>
+                <li><strong>OS:</strong> Debian 12 (Bookworm)</li>
+                <li><strong>Network:</strong> AdGuard Home Protected</li>
+                <li><strong>Admin:</strong> Tony Kilgore (Tk)</li>
+            </ul>
+        </div>
+        <div style="flex: 1; min-width: 250px;">
+            <h3>The Gaming Rig</h3>
+            <ul>
+                <li><strong>CPU:</strong> Ryzen 7 5800x</li>
+                <li><strong>GPU:</strong> Radeon RX 7600</li>
+                <li><strong>OS:</strong> Windows 11 LTSC (Bloat-free)</li>
+            </ul>
+        </div>
+    </div>
 
     <footer>
-        &copy; 2026 KilgoreIT.dev | Built for the love of Hardware & Networking.
+        &copy; 2026 KilgoreIT.dev | Built for the love of Hardware & Linux.
     </footer>
 </div>
 
