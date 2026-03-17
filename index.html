@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,7 +24,7 @@
         }
         .container {
             max-width: 900px;
-            margin: 0 auto;
+            margin: 40px auto;
             background: var(--secondary-bg);
             padding: 40px;
             border-radius: 12px;
@@ -44,6 +44,7 @@
             border-radius: 20px;
             font-size: 0.8rem;
             margin-right: 10px;
+            margin-top: 10px;
         }
         .grid {
             display: grid;
@@ -61,9 +62,79 @@
             text-decoration: none;
             font-weight: bold;
         }
-        .contact-link:hover { text-decoration: underline; }
         code { background: #21262d; padding: 2px 5px; border-radius: 4px; font-family: monospace; }
+        blockquote {
+            border-left: 4px solid var(--accent-color);
+            padding-left: 20px;
+            font-style: italic;
+            margin: 40px 0;
+            color: #8b949e;
+        }
         footer { margin-top: 50px; text-align: center; font-size: 0.8rem; opacity: 0.6; }
         
         @media (max-width: 600px) {
-            .grid { grid-
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>🛡️ KilgoreIT</h1>
+        <p>Privacy-focused. Performance-driven. Bloat-free communication.</p>
+        <span class="badge">Bazzite OS</span>
+        <span class="badge">NextDNS Protected</span>
+        <span class="badge">Matrix/Element</span>
+    </header>
+
+    <section>
+        <p>I’ve moved away from proprietary platforms and corporate tracking. This domain serves as my personal hub for secure communication and high-performance gaming projects.</p>
+    </section>
+
+    <h2>📡 Connectivity</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Primary Contact</h3>
+            <p><strong>Signal:</strong> <span style="color:var(--highlight)">FedTheVoid.95</span></p>
+            <p><strong>Element:</strong> @fedthevoid:matrix.org</p>
+        </div>
+        <div class="card">
+            <h3>Gaming Handles</h3>
+            <p><strong>Universal ID:</strong> <code>FedTheVoid</code></p>
+            <p>Steam, Epic, and PS5.</p>
+        </div>
+    </div>
+
+    <h2>🎮 The Build</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>The Gaming Rig</h3>
+            <ul>
+                <li><strong>OS:</strong> Bazzite</li>
+                <li><strong>CPU:</strong> Ryzen 7 5800X</li>
+                <li><strong>GPU:</strong> Radeon RX 7600</li>
+                <li><strong>DNS:</strong> NextDNS</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Active Rotation</h3>
+            <ul>
+                <li>Phasmophobia</li>
+                <li>Fortnite (Zero Build)</li>
+                <li>PS5 Titles</li>
+            </ul>
+        </div>
+    </div>
+
+    <blockquote>
+        "No bloat, just performance. If I don't own the data, I don't use the service."
+    </blockquote>
+
+    <footer>
+        © 2026 KilgoreIT.dev | Built for the love of Hardware & Linux.
+    </footer>
+</div>
+
+</body>
+</html>
