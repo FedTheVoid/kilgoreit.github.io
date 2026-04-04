@@ -3,138 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KilgoreIT | Privacy & Performance</title>
+    <title>FedTheVoid | Digital Architect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root {
-            --bg-color: #0d1117;
-            --text-color: #c9d1d9;
-            --accent-color: #58a6ff;
-            --secondary-bg: #161b22;
-            --border-color: #30363d;
-            --success-color: #238636;
-            --highlight: #f0883e;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background: var(--secondary-bg);
-            padding: 40px;
-            border-radius: 12px;
-            border: 1px solid var(--border-color);
-        }
-        header {
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-        h1 { color: var(--accent-color); margin: 0; font-size: 2rem; }
-        h2 { color: var(--accent-color); border-bottom: 1px solid var(--border-color); padding-bottom: 10px; margin-top: 40px; }
-        .badge {
-            display: inline-block;
-            padding: 2px 10px;
-            background: var(--border-color);
-            border-radius: 20px;
-            font-size: 0.8rem;
-            margin-right: 10px;
-            margin-top: 10px;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-        .card {
-            background: var(--bg-color);
-            padding: 20px;
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
-        }
-        .contact-link {
-            color: var(--highlight);
-            text-decoration: none;
-            font-weight: bold;
-        }
-        code { background: #21262d; padding: 2px 5px; border-radius: 4px; font-family: monospace; }
-        blockquote {
-            border-left: 4px solid var(--accent-color);
-            padding-left: 20px;
-            font-style: italic;
-            margin: 40px 0;
-            color: #8b949e;
-        }
-        footer { margin-top: 50px; text-align: center; font-size: 0.8rem; opacity: 0.6; }
-        
-        @media (max-width: 600px) {
-            .grid { grid-template-columns: 1fr; }
-        }
+        body { background-color: #0a0510; color: #e2e8f0; }
+        .purple-gradient { background: linear-gradient(135deg, #6b21a8 0%, #3b0764 100%); }
+        .card { background: rgba(30, 20, 45, 0.6); border: 1px solid rgba(168, 85, 247, 0.2); backdrop-filter: blur(10px); }
+        .accent-text { color: #a855f7; }
     </style>
 </head>
-<body>
+<body class="font-sans antialiased">
 
-<div class="container">
-    <header>
-        <h1>🛡️ KilgoreIT</h1>
-        <p>Privacy-focused. Performance-driven. Bloat-free communication.</p>
-        <span class="badge">Bazzite OS</span>
-        <span class="badge">NextDNS Protected</span>
-        <span class="badge">Matrix/Element</span>
+    <header class="py-16 px-6 text-center purple-gradient shadow-2xl">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl font-extrabold tracking-tight text-white mb-2">FedTheVoid</h1>
+            <p class="text-xl text-purple-200 font-medium italic">"No bloat, just performance. If I don't own the data, I don't use the service."</p>
+            <div class="mt-6 flex justify-center gap-4">
+                <span class="bg-white/10 px-3 py-1 rounded-full text-xs border border-white/20">Privacy Advocate</span>
+                <span class="bg-white/10 px-3 py-1 rounded-full text-xs border border-white/20">Self-Hoster</span>
+                <span class="bg-white/10 px-3 py-1 rounded-full text-xs border border-white/20">Father of 4</span>
+            </div>
+        </div>
     </header>
 
-    <section>
-        <p>I’ve moved away from proprietary platforms and corporate tracking. This domain serves as my personal hub for secure communication and high-performance gaming projects.</p>
-    </section>
+    <main class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <section class="card p-8 rounded-2xl lg:col-span-2">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-server accent-text text-3xl mr-4"></i>
+                <h2 class="text-2xl font-bold">The Digital Architect</h2>
+            </div>
+            <p class="text-gray-300 mb-4 leading-relaxed">
+                I am deeply "under the hood" of my technology. My approach to computing is professional and intentional. I’ve moved away from proprietary platforms and corporate tracking to reclaim my data.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="bg-black/30 p-4 rounded-xl border border-purple-900/30">
+                    <h3 class="font-bold accent-text mb-2 text-sm uppercase">Infrastructure</h3>
+                    <ul class="text-sm space-y-1 text-gray-400">
+                        <li><i class="fas fa-check mr-2 text-xs"></i>Debian + Docker</li>
+                        <li><i class="fas fa-check mr-2 text-xs"></i>Synapse/Element (Matrix)</li>
+                        <li><i class="fas fa-check mr-2 text-xs"></i>Jellyfin Media Hosting</li>
+                        <li><i class="fas fa-check mr-2 text-xs"></i>Cloudflare Tunnels</li>
+                    </ul>
+                </div>
+                <div class="bg-black/30 p-4 rounded-xl border border-purple-900/30">
+                    <h3 class="font-bold accent-text mb-2 text-sm uppercase">Hardware & OS</h3>
+                    <ul class="text-sm space-y-1 text-gray-400">
+                        <li><i class="fas fa-desktop mr-2 text-xs"></i>Gaming Rig: Bazzite (Linux)</li>
+                        <li><i class="fas fa-terminal mr-2 text-xs"></i>Headless Server (SSH Only)</li>
+                        <li><i class="fas fa-shield-alt mr-2 text-xs"></i>NextDNS Protected</li>
+                        <li><i class="fas fa-print mr-2 text-xs"></i>3D Printing & DIY Tools</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <h2>📡 Connectivity</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>Primary Contact</h3>
-            <p><strong>Signal:</strong> <span style="color:var(--highlight)">FedTheVoid.95</span></p>
-            <p><strong>Element:</strong> @fedthevoid:matrix.org</p>
-        </div>
-        <div class="card">
-            <h3>Gaming Handles</h3>
-            <p><strong>Universal ID:</strong> <code>FedTheVoid</code></p>
-            <p>Steam, Epic, and PS5.</p>
-        </div>
-    </div>
+        <section class="card p-8 rounded-2xl">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-user-shield accent-text text-3xl mr-4"></i>
+                <h2 class="text-2xl font-bold">The Mission</h2>
+            </div>
+            <p class="text-gray-300 text-sm leading-relaxed mb-6">
+                I am a proud father of four children, and that drives my focus on privacy. I am dedicated to stopping companies from turning users into products. 
+            </p>
+            <blockquote class="border-l-4 border-purple-600 pl-4 italic text-gray-400 text-sm">
+                "Controlling my data isn't a hobby—it's a necessity."
+            </blockquote>
+        </section>
 
-    <h2>🎮 The Build</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>The Gaming Rig</h3>
-            <ul>
-                <li><strong>OS:</strong> Bazzite</li>
-                <li><strong>CPU:</strong> Ryzen 7 5800X</li>
-                <li><strong>GPU:</strong> Radeon RX 7600</li>
-                <li><strong>DNS:</strong> NextDNS</li>
+        <section class="card p-8 rounded-2xl lg:col-span-1">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-gamepad accent-text text-3xl mr-4"></i>
+                <h2 class="text-2xl font-bold">The Diverse Gamer</h2>
+            </div>
+            <p class="text-gray-300 text-sm mb-4">Find me everywhere as <span class="font-bold text-white italic">FedTheVoid</span>.</p>
+            <div class="flex flex-wrap gap-2 mb-6">
+                <span class="bg-purple-900/40 px-2 py-1 rounded text-xs">PlayStation</span>
+                <span class="bg-purple-900/40 px-2 py-1 rounded text-xs">Steam</span>
+                <span class="bg-purple-900/40 px-2 py-1 rounded text-xs">Xbox</span>
+                <span class="bg-purple-900/40 px-2 py-1 rounded text-xs">Epic Games</span>
+                <span class="bg-purple-900/40 px-2 py-1 rounded text-xs">Meta Quest 3S</span>
+            </div>
+            <h3 class="font-bold text-sm uppercase mb-3 accent-text">The Rotation</h3>
+            <ul class="text-sm text-gray-400 space-y-2">
+                <li><i class="fas fa-skull mr-2"></i>Rust</li>
+                <li><i class="fas fa-cube mr-2"></i>Minecraft</li>
+                <li><i class="fas fa-ghost mr-2"></i>Phasmophobia</li>
             </ul>
-        </div>
-        <div class="card">
-            <h3>Active Rotation</h3>
-            <ul>
-                <li>Phasmophobia</li>
-                <li>Fortnite (Zero Build)</li>
-                <li>PS5 Titles</li>
-            </ul>
-        </div>
-    </div>
+        </section>
 
-    <blockquote>
-        "No bloat, just performance. If I don't own the data, I don't use the service."
-    </blockquote>
+        <section class="card p-8 rounded-2xl lg:col-span-1">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-clone accent-text text-3xl mr-4"></i>
+                <h2 class="text-2xl font-bold">TCG Collector</h2>
+            </div>
+            <div class="space-y-4">
+                <div class="flex justify-between items-center bg-black/20 p-3 rounded-lg border border-purple-500/20">
+                    <span>Magic: The Gathering</span>
+                    <span class="text-xs text-purple-400">Player/Collector</span>
+                </div>
+                <div class="flex justify-between items-center bg-black/20 p-3 rounded-lg border border-purple-500/20">
+                    <span>Yu-Gi-Oh!</span>
+                    <span class="text-xs text-purple-400">Player/Collector</span>
+                </div>
+                <div class="flex justify-between items-center bg-black/20 p-3 rounded-lg border border-purple-500/20">
+                    <span>Pokémon</span>
+                    <span class="text-xs text-purple-400">Collector</span>
+                </div>
+            </div>
+        </section>
 
-    <footer>
-        © 2026 KilgoreIT.dev | Built for the love of Hardware & Linux.
+        <section class="card p-8 rounded-2xl lg:col-span-1">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-music accent-text text-3xl mr-4"></i>
+                <h2 class="text-2xl font-bold">Music Lover</h2>
+            </div>
+            <p class="text-gray-300 text-sm leading-relaxed">
+                Music is my ultimate companion. I don't stick to one genre—I listen to everything. Whether it's for focus while SSHing into the server or relaxing after a gaming session, the speakers are always on.
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="py-12 px-6 text-center text-gray-500 text-sm border-t border-purple-900/30">
+        <p>&copy; 2026 KilgoreIT.dev | Built for the love of Hardware & Linux.</p>
+        <p class="mt-2">Rooted in Greenwood, SC</p>
     </footer>
-</div>
 
 </body>
 </html>
